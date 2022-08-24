@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+header h1 {
+    font-weight: 800;
+    margin: 10px;
+}
+header button {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: #06c;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 10px;
+} 
+form {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin: 10px;
+}
+form div  {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 5px;
+    margin: 10px;
+}
+input {
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    background-color: inherit;
+    border-radius: 12px;
+}
+.btn {
+    width: 180px;
+    height: 50px;
+    padding: 5px;
+    background-color:#06c;
+    color: white;
+    border-radius: 15px;
+}
+.modal {
+    transition: .5s ease;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+}
+.modal p {
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+.modal input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 12px;
+    margin: 5px;
+}
+.btn_change {
+    width: 100%;
+    height: 50px;
+    background-color: #06c;
+    color: white;
+    border-radius: 12px;
+    margin: 5px;
+}
+button {
+    cursor: pointer;
+}
+.btn_hiden {
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid #c4c4c4;
+}
+.active_modal {
+    right: 0;
+    margin-right: 0px;
+    transition: .5s ease;
+}
+.box_element {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #c4c4c4;
+}
+.p_box {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box_span {
+    color: #06c;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 20px;
+}
